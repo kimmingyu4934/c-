@@ -2667,26 +2667,54 @@
 //	int turn = 0;
 //	int A = 0, B = 0;
 //	printf("게임을 시작합니다! : 뒤에 숫자를 입력해주세요.\n");
+//	char player = 0;
 //	while (1)
 //	{
-//		char X;
-//		
-//			X = 0;
 //			for (int i = 0; i < 3; i++)
 //			{
-//				printf("%c :", 'A' + X);
+//				printf("%c :", 'A' + player);
 //				scanf("%d", &A);
-//				X++;
 //			}
-//			turn += X;
-//			printf("턴이 넘어갑니다\n");
-//			for(int i = 0; i < 3; i ++)
-//			{
-//				printf("%c :", 'A' + X);
-//				scanf("%d", &B);
-//				X--;
-//			}
-//			turn -= X;
-//			printf("턴이 넘어갑니다\n");
+//			player++;
+//			player = player % 2;
 //	}
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int input = 0, score = 1;
+//	char player = 0;
+//	printf("<베스킨 라빈스 31!>\n게임을 시작합니다! 31을 말하는 사람이 지게됩니다.(0입력시 턴 넘김)\n");
+//	while (1)
+//	{
+//		for (int i = 0; i < 3; i++)
+//		{
+//			printf("%c :", 'A' + player);
+//			scanf("%d", &input);
+//			if (input == 0) {
+//				if (i == 0) {
+//					printf("턴을 넘기기 위해서는 하나 이상의 수를 말해야 됩니다\n");
+//					i--; continue;
+//				}
+//				break;
+//			}
+//			if (input != score)
+//			{
+//				printf("잘못된 입력입니다.\n 지금 입력해야 되는 값은 %d 입니다\n", score);
+//				i--;
+//				continue;
+//			}
+//			score++;
+//			if (input >= 31) {
+//				break;
+//			}
+//		}
+//		player++;
+//		player %= 2;
+//		if (input >= 31) {
+//			break;
+//		}
+//		printf("턴이 넘어갑니다.\n");
+//	}
+//	printf("유저 %c의 승리입니다!", 'A' + player);
 //}
