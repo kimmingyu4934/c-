@@ -2718,3 +2718,120 @@
 //	}
 //	printf("유저 %c의 승리입니다!", 'A' + player);
 //}
+//#include <stdio.h>
+//int main()
+//{
+//	float conversion = 0;
+//	while (conversion < 2)
+//	{
+//		printf("%.1f\n", conversion);
+//		conversion = conversion + 0.1;
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	for (double conversion = 90; conversion > 0.1; conversion /= 3)
+//	{
+//		if (conversion == 10.0) {
+//			continue;
+//		}
+//		printf("%.3lf\n", conversion);
+//	}
+//	return 0;
+//}
+////#include <stdio.h>
+//int main()
+//{
+//	int number;
+//	while (1) {
+//		scanf("%d", &number);
+//		if (number == 0) {
+//			printf("프로그램 종료\n");
+//			break;
+//		}
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	float conversion = 0;
+//	for (; conversion < 2;)
+//	{
+//		printf("%.1f\n", conversion);
+//		conversion += 0.1;
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	double conversion = 90;
+//	while (conversion > 0.1)
+//	{
+//		if (conversion == 10.0) {
+//			conversion /= 3;
+//			continue;
+//		}
+//		printf("%.3lf\n", conversion);
+//		conversion /= 3;
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int number;
+//	for (; ;)
+//	{
+//		scanf("%d", &number);
+//		if (number == 0)
+//		{
+//			printf("프로그램 종료\n");
+//			break;
+//		}
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int for_flag = 1;//1
+//	int number = 0;//2
+//	while(for_flag) { //3
+//		printf("number = %d\n", number); //4 8
+//		while (number++) { //5 9
+//			printf(" >number = %d\n", number); //10
+//			if (number == 3) { //11
+//				for_flag = 0; //12
+//				break;//13
+//			}
+//		}
+//		number++;//6 14
+//		printf(">>number = %d\n", number); //7 15
+//	}
+//	printf("%d %d\n", for_flag, number); //16
+//	return 0;//17
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int for_flag = 1;//1
+//	int number = 0;//2
+//	for (; for_flag;) { //3
+//		printf("number = %d\n", number); //4 8
+//		for (; number++;) {//5 9
+//			printf(" >number = %d\n", number); //10
+//			if (number == 3) { //11
+//				for_flag = 0; //12
+//				break;//13
+//			}
+//		}
+//		number++;//6 14
+//		printf(">>number = %d\n", number); //7 15
+//	}
+//	printf("%d %d\n", for_flag, number); //16
+//	return 0;//17
+//}
