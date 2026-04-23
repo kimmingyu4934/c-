@@ -260,23 +260,54 @@
 //	scanf("%d", &year);
 //	printf("%d", year - 543);
 //}
+//#include <stdio.h>
+//int main()
+//{
+//	int subject = 0, score = 0,score_sum = 0,max = 0;
+//	scanf("%d", &subject);
+//	scanf("%d", &score);
+//	max = score;
+//	for (int i = 1; subject > i; i++)
+//	{
+//		scanf("%d", &score);
+//		if (max < score) {
+//			max = score;
+//		}
+//	}
+//	for (int i = 0; subject; i++) {
+//		score_sum = (score / max) * 100;
+//	}
+//	printf("%d", score_sum /subject);
+//}
+////백준 11546번문제
+//#include <stdio.h>
+//int main()
+//{
+//	int num = 0, count = 1, store, store1;
+//	scanf("%d", &num);
+//	store = num % 42;
+//	for (int i = 1; i < 10; i++)
+//	{
+//		scanf("%d", &num);
+//		store1 = num % 42;
+//		if (store != store1) {
+//			count++;
+//		}
+//		store = store1;
+//	}
+//	printf("%d", count);
+//}
 #include <stdio.h>
 int main()
 {
-	int subject = 0, score = 0,score_sum = 0,max = 0;
-	scanf("%d", &subject);
-	scanf("%d", &score);
-	max = score;
-	for (int i = 1; subject > i; i++)
+	int input,a[1],store,slash;
+	scanf("%d", &input);
+	slash = input;
+	for(int i = 0; slash > 0; i++)
 	{
-		scanf("%d", &score);
-		if (max < score) {
-			max = score;
-		}
+		store = slash % 2;
+		slash /= 2;
+		a[i] = store;
+		printf("%d", a[i]);
 	}
-	for (int i = 0; subject; i++) {
-		score_sum = (score / max) * 100;
-	}
-	printf("%d", score_sum /subject);
 }
-//백준 11546번문제
